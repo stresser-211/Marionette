@@ -1,69 +1,7 @@
-<? This is an examle of a Puppet program i guess ?>
+﻿<? This is an examle of a Puppet program i guess ?>
 
-@import std
+@import "std"
 
-hello_world(void) ; void {
-	std::out("Hello, World!\n")
-}
-counter(int) ; void {
-	int x ; persist
-	std::out("## You've called this function #x times! ##\n")
-}
-hypotenuse(real a, real b) ; real {
-	return (a~2)+(b~2)
-}
-find(int value, int array ; ptr) ; int {
-	int count
-	for_each(int x, array) {
-		if (x == value) {
-			count++
-		}
-	}
-	count => std::out("Found \"#value\" #count times.\n") : std::out("\#value"\" not found.\n")
-}
-outer(void) ; void {
-	inner(void) ; void {
-		std::out("Hello from inner function!\n")
-	}
-	std::out("Hello from outer function!\n")
-	inner()
-}
-main(void) {
-	hello_world()
-	for (int x, x != 5, x++) {
-		counter()
-	}
-	int array[9] = [11, 25, 89, 5*5, hypotenuse(9, 16), 0.25, -25, 7/3, 1~-2]
-	for_each(int x, array) {
-		std::out("#x\t")
-	}
-	std::newline()
-	find(25, array)
-	find(0, array)
-	wired struct {
-		private int x_8 ; x8 unsigned
-		private int x_16 ; x16 unsigned
-		private int x_32 ; x32 unsigned
-		private int x_64 ; x64 unsigned
-		private int x_128 ; x128 unsigned
-		struct(void) {
-			x_8--
-			x_16--
-			x_32--
-			x_64--
-			x_128--
-			std::out("#x_8\n#x_16\n#x_32\n#x_64\n#x_128\n")
-		}
-		public final test(char str ; ptr) ; void {
-			std::out("#str" * 2, "\n")
-		}
-		public over(void) ; void {
-			std::out("Before overriding!\n")
-		}
-	}
-	struct my_struct
-	my_struct.test("[Haha multiplying strings doin' brrrr] ")
-	override std::over(void) ; void {
-		std::out("After overriding!\n")
-	}
+fun main(void) : void {
+	std::out("Hello, World!")
 }
