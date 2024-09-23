@@ -1,7 +1,7 @@
 ﻿<? This is an examle of a Puppet program i guess ?>
 
-@import "std"
+@import "filesystem"
 
 fun main(void) : void {
-	std::out("Hello, World!")
+	filesystem::out(stdout, "Hello, World!")
 }
