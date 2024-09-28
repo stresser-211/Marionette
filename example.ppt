@@ -2,6 +2,6 @@
 
 @import "filesystem"
 
-fun main(void) : void {
-	filesystem::out(stdout, "Hello, World!")
+void main = fun (void) {
+	filesystem::out(stdout, "Hello, World!\n")
 }
