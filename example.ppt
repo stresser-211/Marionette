@@ -1,4 +1,4 @@
-﻿<? This is an examle of a Puppet program i guess ?>
+﻿<? This is an examle of a Marionette program i guess ?>
 
 @import "filesystem"
 

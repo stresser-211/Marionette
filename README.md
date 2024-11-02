@@ -1,6 +1,7 @@
-﻿Wireless — build tools (translator, linker)
+﻿Puppeteer — build tools (translator, linker)
 
-Marionette — IDE
+Theatre — IDE
+
 
 
 makin' concepts is ez but implementin' 'em ain't =(
