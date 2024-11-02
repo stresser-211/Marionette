@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<head>
+	<title>Puppet show!</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Puppet">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+	<noscript>JS disabled =(</noscript>
+	<script type="text/javascript">
+		document.body.innerHTML =
+	`<br>
+	<center><STRtitle onclick="window.open('../index.html', '_self')">Puppet</STRtitle></center>
+	<br><hr><span>
+	<STRchapter>Preprocessor:</STRchapter>
+
+	@import "filename" <xyz style="color:#333333">(Without the extension!)</xyz>
+	@macro MACRO [content] [@noreset]
+	@if [condition]
+	@elseif [condition]
+	@else
+	@endif
+	@reset MACRO
+	@error "message"
+	@warn "message"
+	@message "message"
+
+	<STRchapter>Conditions:</STRchapter>
+
+	defined(MACRO)
+	not_defined(MACRO)
+	equal(MACRO1, MACRO2)
+	not_equal(MACRO1, MACRO2)
+
+	<STRchapter>Predefined macros:</STRchapter><table style="border-spacing: 32px">
+	
+	<th>---Macro---</th><td>
+	_Puppet_version
+	_File
+	_Filename
+	_Line
+	_Current_time
+	_Target
+	</td>
+
+	<th>---Possible value---</th><td>
+	0x00000001
+	"C:/Projects/Puppet/test.ppt"
+	"test.ppt"
+	21
+	"14.05.2011|14:45:59"
+	"unix"
+	</td>
+
+	</span>`
+	</script>
+</body>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+	<title>Puppet show!</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Puppet">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<style>
+		teki {
+			font-family: _teki;
+			color:rebeccapurple;
+		}
+	</style>
+</head>
+<body>
+	<noscript>JS disabled =(</noscript>
+	<script type="text/javascript">
+		document.body.innerHTML =
+	`<br>
+	<center><STRtitle onclick="window.open('../index.html', '_self')">Puppet</STRtitle></center>
+	<br><hr><span>
+	<center style="font-size:32px; font-family: _teki">Here's the full list of reserved expressions in Puppet:</center>
+	<a style="font-family: _teki">---Keywords---</a><center><table style="border-spacing: 32px">
+	<td>
+dec
+real
+bin
+hex
+string
+enum
+chain
+vector
+	</td><td>
+fun
+union
+file
+any
+auto
+ptr
+ref
+bits
+	</td><td>
+const
+restrict
+persist
+virtual
+override
+export
+consteval
+constinit
+	</td><td>
+public
+private
+isolated
+thread
+detach
+atomic
+requires
+unsigned
+	</td><td>
+this
+self
+new
+free
+if
+else
+switch
+case
+	</td><td>
+loop
+for
+for_each
+default
+break
+continue
+def
+operator
+	</td><td>
+inline
+typeof
+addressof
+sizeof
+capacity
+return
+yield
+typename
+	</td><td>
+unsafe
+safe
+convert
+interpret
+throw
+try
+catch
+assert
+
+	</td></table></center>
+	<a style="font-family: _teki">---Operators---</a><custom style="color:grey"> (§ - Alt+277)</custom><center><table style="border-spacing: 24px"><td>
+<teki>Assignment</teki>
+
+x = y
+x -= y
+x += y
+x *= y
+x /= y
+x %= y
+x **= y
+x ~= y
+x <<= y
+x >>= y
+x >>>= y
+x <<<= y
+x &= y
+x |= y
+x ^= y
+x §= y
+x ??= y
+	</td><td>
+<teki>Arithmetic</teki>
+
+x + y
+x - y
+x * y
+x / y
+x % y
+x ** y
+x ~ y
+x++
+++x
+x--
+--x
+-x
+	</td><td>
+<teki>Logical</teki>
+
+!x
+x && y
+x || y
+x ^^ y
+	</td><td>
+<teki>Comparison</teki>
+
+x == y
+x === y
+x != y
+x !== y
+x < y
+x > y
+x <= y
+x >= y
+x <=> y
+	</td><td>
+<teki>Member access</teki>
+
+x.y
+x->y
+x[y]
+	</td><td>
+<teki>Conversion</teki>
+
+convert<​T>(x)
+interpret<​T>(y)
+	</td><td>
+<teki>Memory allocation</teki>
+
+new[N] T<​x>
+free(x)
+	</td><td>
+<teki>Bitwise</teki>
+
+x << y
+x >> y
+x >>> y
+x <<< y
+x & y
+x | y
+x ^ y
+§x
+	</td><td>
+<teki>Other</teki>
+
+x(y)
+x=>(y)
+x ?? y
+x...
+x<​y>
+typeof(x)
+addressof(x)
+sizeof(x)
+capacity(x)
+	</td></table></center></span>`
+	</script>
+</body>

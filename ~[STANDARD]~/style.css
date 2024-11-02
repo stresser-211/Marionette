@@ -1,0 +1,38 @@
+@font-face {
+	font-family: _teki;
+	src: url(teki.ttf);
+}
+@font-face {
+	font-family: _noto;
+	src: url(noto.ttf);
+}
+
+body {
+	color: mediumpurple;
+	background-color: black;
+	font-family: _noto;
+}
+a {
+	color: purple;
+}
+span {
+	white-space: pre-wrap;
+	font-size: 20px;
+}
+td {
+	vertical-align: top;
+}
+th {
+	color: purple;
+}
+
+/* Custom tags */
+
+STRtitle {
+	font-family: _teki;
+	font-size: 48px;
+}
+STRchapter {
+	font-family: _teki;
+	font-size: 24px;
+}
