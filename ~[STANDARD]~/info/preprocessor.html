@@ -14,23 +14,34 @@
 	<br><hr><span>
 	<STRchapter>Preprocessor:</STRchapter>
 
-	@import "filename" <xyz style="color:#333333">(Without the extension!)</xyz>
-	@macro MACRO [content] [@noreset]
-	@if [condition]
-	@elseif [condition]
+	@import <​filename> <xyz style="color:#333333">(Without the extension!)</xyz>
+	@macro MACRO [definition] @noreset <xyz style="color:#333333">"@noreset" is optional</xyz>
+	@if <​condition>
+	@elseif <​condition>
 	@else
 	@endif
 	@reset MACRO
-	@error "message"
-	@warn "message"
-	@message "message"
+	@error <​message>
+	@warn <​message>
+	@note <​message>
 
 	<STRchapter>Conditions:</STRchapter>
 
-	defined(MACRO)
-	not_defined(MACRO)
-	equal(MACRO1, MACRO2)
-	not_equal(MACRO1, MACRO2)
+	defined<​MACRO>
+	!defined<​MACRO>
+	equal<​MACRO1, MACRO2>
+	!equal<​MACRO1, MACRO2>
+
+	<STRchapter>Escape sequences:</STRchapter>
+
+	#<			<
+	#>			>
+	##			#
+	#"			"
+	#n			CR LF
+	#r			CR
+	#l			LF
+	#t			Tab
 
 	<STRchapter>Predefined macros:</STRchapter><table style="border-spacing: 32px">
 	

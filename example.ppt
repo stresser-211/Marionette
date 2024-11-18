@@ -1,7 +1,0 @@
-﻿<? This is an examle of a Marionette program i guess ?>
-
-@import "filesystem"
-
-void main = fun (void) {
-	filesystem::out(stdout, "Hello, World!\n")
-}

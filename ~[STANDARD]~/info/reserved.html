@@ -18,7 +18,7 @@
 	`<br>
 	<center><STRtitle onclick="window.open('../index.html', '_self')">Marionette</STRtitle></center>
 	<br><hr><span>
-	<center style="font-size:32px; font-family: _teki">Here's the full list of reserved expressions in Marionette:</center>
+	<center style="font-size:32px; font-family: _teki">Here's the full list of reserved keywords and operators in Marionette:</center>
 	<a style="font-family: _teki">---Keywords---</a><center><table style="border-spacing: 32px">
 	<td>
 dec
@@ -125,9 +125,7 @@ x % y
 x ** y
 x ~ y
 x++
-++x
 x--
---x
 -x
 	</td><td>
 <teki>Logical</teki>
@@ -149,20 +147,23 @@ x <= y
 x >= y
 x <=> y
 	</td><td>
-<teki>Member access</teki>
+<teki>Access</teki>
 
 x.y
 x->y
+*x
+x.*y
+x->*y
 x[y]
 	</td><td>
 <teki>Conversion</teki>
 
 convert<​T>(x)
-interpret<​T>(y)
+interpret<​T>(x)
 	</td><td>
 <teki>Memory allocation</teki>
 
-new[N] T<​x>
+new T<​x>
 free(x)
 	</td><td>
 <teki>Bitwise</teki>
