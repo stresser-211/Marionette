@@ -4,4 +4,4 @@ Theatre — IDE
 
 
 
-makin' concepts is ez but implementin' 'em ain't =(
+---just makin' concepts---
